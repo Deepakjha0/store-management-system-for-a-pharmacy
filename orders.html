@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="topBar">
+        <div class="leftMenu">
+          <div class="logoWrappper">
+            <img
+              src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+              alt="Kafene-Logo"
+            />
+            <p class="brandName">Kafene</p>
+          </div>
+          <nav>
+            <a class="topMenuItem" href="orders.html">Orders</a>
+            <a class="topMenuItem" href="#">Products</a>
+            <a class="topMenuItem" href="#">Users</a>
+          </nav>
+        </div>
+        <a class="topMenuItem" href="./index.html">Logout</a>
+      </div>
+    </header>
+    <main>
+      <div class="homePageWrapper">
+        <h1>Orders</h1>
+        <div class="orderWrapper">
+          <div class="filterWrapper">
+            <h3>Filters</h3>
+            <div class="filterOption">
+              <p>Count: 11</p>
+              <label class="homePage_filterCheckbox">
+                <input type="checkbox" name="orders-new" checked />
+                New
+              </label>
+              <label class="homePage_filterCheckbox">
+                <input type="checkbox" name="orders-packed" checked />
+                Packed
+              </label>
+              <label class="homePage_filterCheckbox">
+                <input type="checkbox" name="orders-transit" checked />
+                InTransit
+              </label>
+              <label class="homePage_filterCheckbox">
+                <input type="checkbox" name="orders-delivered" checked />
+                Delivered
+              </label>
+            </div>
+          </div>
+          <div style="width: 100%;">
+            <table class="orderTable">
+                <tr>
+                    <th>ID</th>
+                    <th>Customer</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                </tr>
+                <tbody id="table-body">
+                    <tr class="homePage_tableRow">
+                        <td class="homePageSecondaryText">752-42-3160</td>
+                        <td class="homePagePrimaryText">Emmery Grizard</td>
+                        <td class="homePagePrimaryText">11 Mar, 2020
+                            <br>
+                            <span class="homePageSecondaryText">3:14 PM</span>
+                        </td>
+                        <td class="homePageSecondaryText">$518.23</td>
+                        <td class="homePagePrimaryText">New</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./orders.js"></script>
+  </body>
+</html>
